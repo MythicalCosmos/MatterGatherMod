@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "materialgather",
+	"version": "${version}",
+	"name": "materialgather",
+	"description": "This mod collects any list of items via a schematic or a gui!",
+	"authors": [
+		"MythicalCosmos"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/materialgather/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"matgath.net.Materialgather"
+		],
+		"client": [
+			"matgath.net.MaterialgatherClient"
+		],
+		"fabric-datagen": [
+			"matgath.net.MaterialgatherDataGenerator"
+		]
+	},
+	"mixins": [
+		"materialgather.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
